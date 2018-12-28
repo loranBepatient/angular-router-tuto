@@ -5,8 +5,11 @@
     >Crisis Center</a
   >
   <a [routerLink]="['/heroes']" routerLinkActive="router-link-active">Heroes</a>
+  <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
 </nav>
 
 <div [@routeAnimation]="getAnimationData(routerOutlet)">
   <router-outlet #routerOutlet="outlet"></router-outlet>
 </div>
+
+<router-outlet name="popup"></router-outlet>
