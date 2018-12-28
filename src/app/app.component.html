@@ -6,6 +6,7 @@
   >
   <a [routerLink]="['/heroes']" routerLinkActive="router-link-active">Heroes</a>
   <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
+  <a routerLink="/admin" routerLinkActive="active">Admin</a>
 </nav>
 
 <div [@routeAnimation]="getAnimationData(routerOutlet)">

@@ -10,9 +10,11 @@ import { AppRoutingModule } from "./app-routing.module";
 import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
 
 // App Modules
+import { AuthModule } from "./auth/auth.module";
 import { HeroesModule } from "./heroes/heroes.module";
 import { CrisisCenterModule } from "./crisis-center/crisis-center.module";
 import { ComposeMessageComponent } from "./components/compose-message/compose-message.component";
+import { AdminModule } from "./admin/admin.module";
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent, ComposeMessageComponent],
@@ -20,8 +22,10 @@ import { ComposeMessageComponent } from "./components/compose-message/compose-me
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    AuthModule,
     HeroesModule,
     CrisisCenterModule,
+    AdminModule,
     AppRoutingModule
   ],
   providers: [],
